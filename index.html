@@ -14,7 +14,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Mokhamad Rafi</a>
+        <a class="navbar-brand" href="instagram://user?username=im_virboy
+        " target="_self">Mokhamad Rafi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,7 +31,7 @@
               <a class="nav-link" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">message</a>
             </li>
           </ul>
         </div>
@@ -102,16 +103,8 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-4 md-3">
-          <div class="card">
-            <img src="img/experience/kopi.jpg" class="card-img-top" alt="latte art" />
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eius.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 md-3">
+      <div class="row justify-content-around">
+        <div class="col-md-3">
           <div class="card">
             <img src="img/experience/milkyway.jpg" class="card-img-top" alt="latte art" />
             <div class="card-body">
@@ -119,14 +112,41 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 md-3">
+        <div class="col-md-3">
           <div class="card">
-            <img src="img/experience/kopi.jpg" class="card-img-top" alt="latte art" />
+            <img src="img/experience/milkyway.jpg" class="card-img-top" alt="latte art" />
             <div class="card-body">
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eius.</p>
             </div>
           </div>
         </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="img/experience/milkyway.jpg" class="card-img-top" alt="latte art" />
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eius.</p>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+        <div class="container p-5">
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              <div class="card" style="max-width: 400px;">
+                <div class="card-header bg-primary text-white text-center">
+                  <h5 class="mb-0">Quote</h5>
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0 text-center">
+                    <p class="fs-6">yang sudah boleh pulang</p>
+                    <footer class="blockquote-footer">pak sujud <cite title="Source Title"></cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card end -->
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -134,38 +154,51 @@
           fill-opacity="1"
           d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
-      </svg>
+      </svg> 
     </section>
     <!-- experience end -->
 
     <!-- contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-3">
-          <div class="col-md-6">
-            <form name="contactForm">
-              <div class="mb-3">
-                <label for="Name" class="Name">Nama</label>
-                <input type="text" class="form-control" id="Name" name="nama" />
-              </div>
-              <div class="mb-3">
-                <label for="Email" class="Name">Email</label>
-                <input type="Email" class="form-control" id="Email" name="email" />
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-        </div>
+ <section id="contact" class="py-5">
+  <div class="container my-message">
+    <div class="card shadow" style="max-width: 600px; margin: auto;">
+      <div class="card-header text-center bg-primary text-white">
+        <h5>Pesan untuk Saya</h5>
       </div>
+      <div class="card-body">
+        <!-- Alert -->
+        <div class="alert alert-success alert-dismissible fade show d-none mycontact-alert" role="alert">
+          <i class="bi bi-check-circle-fill"></i> Pesan Berhasil Dikirim.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="alert alert-success alert-dismissible fade show d-none alert-kosong" role="alert">
+          <i class="bi bi-check-circle-fill"></i> harap isi semua kolom!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <!-- Form -->
+        <form name="contactForm">
+          <div class="mb-3">
+            <label for="Name" class="form-label">Nama</label>
+            <input type="text" class="form-control rounded-pill" id="Name" name="nama" placeholder="Masukkan nama Anda" />
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea class="form-control rounded-3" id="pesan" rows="4" name="pesan" placeholder="Tulis pesan Anda di sini"></textarea>
+          </div>
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary btn-kirim rounded-pill">
+              Kirim Pesan
+            </button>
+            <button class="btn btn-primary btn-loading d-none rounded-pill" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Loading...
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#0d6efd"
@@ -185,17 +218,54 @@
 
     <!--script google sheet  -->
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyDr3lhYSTtpFjiSAZaEFzwVCTtEhhxf-912Q3x94jtZyBaTeat3mkd2gbB1rsh6DkV/exec'
-      const form = document.forms['contactForm']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyDr3lhYSTtpFjiSAZaEFzwVCTtEhhxf-912Q3x94jtZyBaTeat3mkd2gbB1rsh6DkV/exec";
+const form = document.forms["contactForm"];
+const btnKirim = document.querySelector(".btn-kirim");
+const btnLoading = document.querySelector(".btn-loading");
+const myAlert = document.querySelector(".mycontact-alert");
+const alertKosong = document.querySelector(".alert-kosong");
+const name = document.querySelector('#Name');
+const pesan = document.querySelector('#pesan');
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // Validasi input
+  if (name.value.trim() === "" || pesan.value.trim() === "") {
+    alertKosong.classList.remove("d-none"); // Tampilkan alert jika input kosong
+    setTimeout(() => {
+      alertKosong.classList.add("d-none"); // Sembunyikan alert setelah 3 detik
+    }, 3000);
+    return;
+  }
+
+  // Sembunyikan alert kosong jika sebelumnya muncul
+  alertKosong.classList.add("d-none");
+
+  // Tampilkan tombol loading dan sembunyikan tombol kirim
+  btnLoading.classList.remove("d-none");
+  btnKirim.classList.add("d-none");
+
+  // Kirim data ke Google Sheet
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      console.log("Success!", response);
+      btnLoading.classList.add("d-none");
+      btnKirim.classList.remove("d-none");
+      myAlert.classList.remove("d-none"); // Tampilkan alert sukses
+      form.reset(); // Reset form setelah sukses
+      setTimeout(() => {
+        myAlert.classList.add("d-none"); // Sembunyikan alert setelah 3 detik
+      }, 3000);
+    })
+    .catch((error) => {
+      console.error("Error!", error.message);
+      btnLoading.classList.add("d-none");
+      btnKirim.classList.remove("d-none");
+    });
+});
+
     </script>
     <!--script google sheet end-->
-
   </body>
 </html>
