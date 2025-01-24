@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- icon bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
     <title>My Portfolio | Mokhamad Rafi</title>
   </head>
 
@@ -14,8 +18,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="instagram://user?username=im_virboy
-        " target="_self">Mokhamad Rafi</a>
+        <a class="navbar-brand" href="https://www.instagram.com/im_virboy/" target="_self">Mokhamad Rafi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,9 +44,9 @@
 
     <!-- jumbroton -->
     <section class="jumbotron text-center">
-      <img src="img/rafi.jpg" alt="Mokhamad Rafi" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4">Mokhamad Rafi</h1>
-      <p class="lead">Orang Sukses</p>
+      <img src="img/gallery/profil/rafi2.jpg" alt="Mokhamad Rafi" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4 profil-nama">Mokhamad Rafi</h1>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffff"
@@ -56,20 +59,19 @@
 
     <!-- about me -->
     <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
+      <div class="container pt-1">
+        <div class="row text-center mb-3" data-aos="fade-down" data-aos-duration="2000">
+          <div class="col mb-4">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-6 text-center">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores vel nemo tenetur recusandae deserunt consectetur libero assumenda rerum dolore perspiciatis.</p>
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="3000">
+            <p><b>Hallo!</b> Namaku Mokhamad Rafi, biasa dipangil Rafi. Aku lahir di Pasuruan, 12 September 2005. Aku lulusan SMA Negeri 4 Pasuruan tahun 2024.</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="3000">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error labore cupiditate odit asperiores tempora, corporis quisquam magni voluptates quis molestias, qui doloribus deleniti voluptatibus ipsam. Dolor minima perferendis
-              nisi quae!
+              Aku pernah bekerja di Kona Kopi sebagai barista. Pengalaman ini memberiku keterampilan menyajikan kopi, melayani pelanggan, dan bekerja dengan detail. Aku juga suka mendaki, membaca, dan saat ini sedang belajar pemrogaman..
             </p>
           </div>
         </div>
@@ -96,43 +98,43 @@
 
     <!-- experience -->
     <section id="experience">
-      <div class="container">
+      <div class="container pt-1" data-aos="fade-down" data-aos-duration="500">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col mb-5">
             <h2>My Experience</h2>
           </div>
         </div>
       </div>
       <div class="row justify-content-around">
-        <div class="col-md-3">
-          <div class="card">
-            <img src="img/experience/milkyway.jpg" class="card-img-top" alt="latte art" />
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eius.</p>
-            </div>
+        <div class="card" style="width: 18rem" data-aos="zoom-in-right" data-aos-easing="linear" data-aos-duration="700">
+          <img src="img/experience/Kalkulator BMI.png" class="card-img-top" alt="Kalkulator BMI" />
+          <div class="card-body">
+            <h5 class="card-title">Kalkulator BMI</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://revou-fundamental-course.github.io/5-aug-24-ifarx90/" class="btn btn-primary">Mampir</a>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <img src="img/experience/milkyway.jpg" class="card-img-top" alt="latte art" />
-            <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eius.</p>
-            </div>
+        <div class="card" style="width: 18rem" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="700">
+          <img src="img/experience/pass generator.png" class="card-img-top" alt="password generator" />
+          <div class="card-body">
+            <h5 class="card-title">Password Generator</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Mampir</a>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3" data-aos="zoom-in-left" data-aos-easing="linear" data-aos-duration="700">
           <div class="card">
-            <img src="img/experience/milkyway.jpg" class="card-img-top" alt="latte art" />
+            <img src="img/experience/kopi.jpg" class="card-img-top" alt="latte art" />
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eius.</p>
+              <p class="card-text">Pernah bekerja sebagai barista di kafe, belajar menyajikan kopi, melayani pelanggan, serta memahami dunia kopi.</p>
             </div>
           </div>
         </div>
         <!-- card -->
-        <div class="container p-5">
+        <div class="container p-5" data-aos="fade-up" data-aos-duration="3000">
           <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
-              <div class="card" style="max-width: 400px;">
+              <div class="card" style="max-width: 400px">
                 <div class="card-header bg-primary text-white text-center">
                   <h5 class="mb-0">Quote</h5>
                 </div>
@@ -154,59 +156,98 @@
           fill-opacity="1"
           d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
-      </svg> 
+      </svg>
     </section>
     <!-- experience end -->
 
-    <!-- contact -->
- <section id="contact" class="py-5">
-  <div class="container my-message">
-    <div class="card shadow" style="max-width: 600px; margin: auto;">
-      <div class="card-header text-center bg-primary text-white">
-        <h5>Pesan untuk Saya</h5>
-      </div>
-      <div class="card-body">
-        <!-- Alert -->
-        <div class="alert alert-success alert-dismissible fade show d-none mycontact-alert" role="alert">
-          <i class="bi bi-check-circle-fill"></i> Pesan Berhasil Dikirim.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <!-- gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center mb-3">
+            <h2>Gallery</h2>
+          </div>
         </div>
-        <div class="alert alert-success alert-dismissible fade show d-none alert-kosong" role="alert">
-          <i class="bi bi-check-circle-fill"></i> harap isi semua kolom!
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara copy.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara copy 2.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara copy 3.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara copy 4.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara copy 5.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara copy 6.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara copy 7.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara copy 8.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
+          <div class="col-md-3">
+            <img src="img/gallery/random/sementara copy 9.jpg" alt="gambar" class="img-fluid gallery-img" />
+          </div>
         </div>
-        <!-- Form -->
-        <form name="contactForm">
-          <div class="mb-3">
-            <label for="Name" class="form-label">Nama</label>
-            <input type="text" class="form-control rounded-pill" id="Name" name="nama" placeholder="Masukkan nama Anda" />
-          </div>
-          <div class="mb-3">
-            <label for="pesan" class="form-label">Pesan</label>
-            <textarea class="form-control rounded-3" id="pesan" rows="4" name="pesan" placeholder="Tulis pesan Anda di sini"></textarea>
-          </div>
-          <div class="text-end">
-            <button type="submit" class="btn btn-primary btn-kirim rounded-pill">
-              Kirim Pesan
-            </button>
-            <button class="btn btn-primary btn-loading d-none rounded-pill" type="button" disabled>
-              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Loading...
-            </button>
-          </div>
-        </form>
       </div>
-    </div>
-  </div>
-</section>
-
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="1"
-          d="M0,256L48,261.3C96,267,192,277,288,277.3C384,277,480,267,576,256C672,245,768,235,864,213.3C960,192,1056,160,1152,160C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
     </section>
+    <!-- gallery end -->
+
+    <!-- contact -->
+    <section id="contact" class="py-5">
+      <div class="container my-message" data-aos="flip-up" data-aos-anchor-placement="bottom-bottom">
+        <div class="card shadow" style="max-width: 600px; margin: auto">
+          <div class="card-header text-center bg-primary text-white">
+            <h5>Pesan untuk Saya</h5>
+          </div>
+          <div class="card-body">
+            <!-- Alert -->
+            <div class="alert alert-success alert-dismissible fade show d-none mycontact-alert" role="alert">
+              <i class="bi bi-check-circle-fill"></i> Pesan Berhasil Dikirim.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <div class="alert alert-success alert-dismissible fade show d-none alert-kosong" role="alert">
+              <i class="bi bi-check-circle-fill"></i> harap isi semua kolom!
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <!-- Form -->
+            <form name="contactForm">
+              <div class="mb-3">
+                <label for="Name" class="form-label">Nama</label>
+                <input type="text" class="form-control rounded-pill" id="Name" name="nama" placeholder="Masukkan nama Anda" />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control rounded-3" id="pesan" rows="4" name="pesan" placeholder="Tulis pesan Anda di sini"></textarea>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn btn-primary btn-kirim rounded-pill">Kirim Pesan</button>
+                <button class="btn btn-primary btn-loading d-none rounded-pill" type="button" disabled><span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Loading...</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#0d6efd"
+        fill-opacity="1"
+        d="M0,256L48,261.3C96,267,192,277,288,277.3C384,277,480,267,576,256C672,245,768,235,864,213.3C960,192,1056,160,1152,160C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
     <!-- contact end -->
     <!-- footer -->
     <footer class="bg-primary text-white text-center pb-1">
@@ -216,55 +257,79 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
+
+      AOS.init({ mirror: true, offset: 100 });
+    </script>
+    <!-- script AOS done -->
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {duration: 3, delay: 2.5, text: 'Calon Orang Sukses.'});
+      gsap.from(".jumbotron img", { opacity: 0, rotationY: 360, duration: 2.5 });
+      gsap.from(".profil-nama", { duration: 1, Y: 5, opacity: 0, delay: 2, ease: "back" });
+    </script>
+    <!-- gsap done -->
+
     <!--script google sheet  -->
     <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyDr3lhYSTtpFjiSAZaEFzwVCTtEhhxf-912Q3x94jtZyBaTeat3mkd2gbB1rsh6DkV/exec";
-const form = document.forms["contactForm"];
-const btnKirim = document.querySelector(".btn-kirim");
-const btnLoading = document.querySelector(".btn-loading");
-const myAlert = document.querySelector(".mycontact-alert");
-const alertKosong = document.querySelector(".alert-kosong");
-const name = document.querySelector('#Name');
-const pesan = document.querySelector('#pesan');
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyDr3lhYSTtpFjiSAZaEFzwVCTtEhhxf-912Q3x94jtZyBaTeat3mkd2gbB1rsh6DkV/exec";
+      const form = document.forms["contactForm"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".mycontact-alert");
+      const alertKosong = document.querySelector(".alert-kosong");
+      const name = document.querySelector("#Name");
+      const pesan = document.querySelector("#pesan");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-  // Validasi input
-  if (name.value.trim() === "" || pesan.value.trim() === "") {
-    alertKosong.classList.remove("d-none"); // Tampilkan alert jika input kosong
-    setTimeout(() => {
-      alertKosong.classList.add("d-none"); // Sembunyikan alert setelah 3 detik
-    }, 3000);
-    return;
-  }
+        // Validasi input
+        if (name.value.trim() === "" || pesan.value.trim() === "") {
+          alertKosong.classList.remove("d-none"); // Tampilkan alert jika input kosong
+          setTimeout(() => {
+            alertKosong.classList.add("d-none"); // Sembunyikan alert setelah 3 detik
+          }, 3000);
+          return;
+        }
 
-  // Sembunyikan alert kosong jika sebelumnya muncul
-  alertKosong.classList.add("d-none");
+        // Sembunyikan alert kosong jika sebelumnya muncul
+        alertKosong.classList.add("d-none");
 
-  // Tampilkan tombol loading dan sembunyikan tombol kirim
-  btnLoading.classList.remove("d-none");
-  btnKirim.classList.add("d-none");
+        // Tampilkan tombol loading dan sembunyikan tombol kirim
+        btnLoading.classList.remove("d-none");
+        btnKirim.classList.add("d-none");
 
-  // Kirim data ke Google Sheet
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
-      console.log("Success!", response);
-      btnLoading.classList.add("d-none");
-      btnKirim.classList.remove("d-none");
-      myAlert.classList.remove("d-none"); // Tampilkan alert sukses
-      form.reset(); // Reset form setelah sukses
-      setTimeout(() => {
-        myAlert.classList.add("d-none"); // Sembunyikan alert setelah 3 detik
-      }, 3000);
-    })
-    .catch((error) => {
-      console.error("Error!", error.message);
-      btnLoading.classList.add("d-none");
-      btnKirim.classList.remove("d-none");
-    });
-});
-
+        // Kirim data ke Google Sheet
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            console.log("Success!", response);
+            btnLoading.classList.add("d-none");
+            btnKirim.classList.remove("d-none");
+            myAlert.classList.remove("d-none"); // Tampilkan alert sukses
+            form.reset(); // Reset form setelah sukses
+            setTimeout(() => {
+              myAlert.classList.add("d-none"); // Sembunyikan alert setelah 3 detik
+            }, 3000);
+          })
+          .catch((error) => {
+            console.error("Error!", error.message);
+            btnLoading.classList.add("d-none");
+            btnKirim.classList.remove("d-none");
+          });
+      });
     </script>
     <!--script google sheet end-->
   </body>

@@ -10,10 +10,18 @@
 }
 
   section {
-    padding-top: 5rem;
+    padding-top: 4rem;
   }
 
   .my-message{
     padding-top: 4rem;
   }
 
+  .gallery-img {
+    padding: 10px;
+    width: 100%;
+  }
+
+  #gallery .row > * {
+    padding: 0;
+  }
